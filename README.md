@@ -1,136 +1,25 @@
-# Narratium - 无限文本冒险 (Infinite Text Adventure)
+# Narratium
 
-Narratium 是一个基于人工智能的文本冒险游戏平台，结合了先进的自然语言处理技术与传统文字冒险游戏的魅力，为玩家提供沉浸式的互动故事体验。
+本仓库是「Narratium」的安卓版本获取入口，附使用资料索引。
 
-## 🌟 特色功能
+## 安装文件资源（夸克网盘）
 
-- **无限故事生成**：基于玩家的选择动态生成故事情节，每次游戏体验都独一无二
-- **角色定制**：创建和定制您自己的游戏角色，影响游戏世界和故事发展
-- **多语言支持**：支持中文和英文，为不同语言的玩家提供本地化体验
-- **故事分享**：创建、分享和探索其他玩家创建的故事框架
-- **流式响应**：实时生成故事内容，提供流畅的游戏体验
-- **GraphRAG 知识检索**：利用图形检索增强生成技术，提供更加丰富和连贯的故事背景
+> **Narratium 安装文件资源（夸克网盘）**：[https://pan.quark.cn/s/5d71a65eb63e](https://pan.quark.cn/s/5d71a65eb63e)
 
-## 🛠️ 技术架构
+## 官方项目
 
-### 后端 (Backend)
+- 上游项目：[0xSkipper/Narratium](https://github.com/0xSkipper/Narratium)
 
-- **FastAPI**：高性能的 Python Web 框架，提供 RESTful API
-- **LangChain**：AI 模型集成框架，用于构建复杂的 AI 应用
-- **GraphRAG**：Microsoft 的图形检索增强生成库，用于知识图谱构建和检索
-- **SQLAlchemy/Supabase**：数据库 ORM 和云数据库支持，可无缝切换
-- **OpenAI/Ollama**：支持多种 LLM 模型，包括本地部署和云端 API
+## 更多资料
 
-### 前端 (Frontend)
-
-- **Next.js**：React 框架，提供服务端渲染和静态生成
-- **TypeScript**：类型安全的 JavaScript 超集
-- **Supabase Auth**：集成 Google OAuth 认证
-- **Tailwind CSS**：实用优先的 CSS 框架，用于构建现代化 UI
-
-## 🚀 快速开始
-
-### 后端设置
-
-1. 克隆仓库并安装依赖：
-
-```bash
-git clone https://github.com/yourusername/OpenWorld.git
-cd OpenWorld
-pip install -r requirements.txt
-```
-
-2. 配置环境变量：
-
-```bash
-cp .env.example .env
-# 编辑 .env 文件，填入必要的 API 密钥和配置
-```
-
-3. 启动后端服务：
-
-```bash
-python main.py
-```
-
-服务将在 http://localhost:8000 上运行。
-
-### 前端设置
-
-1. 进入前端目录并安装依赖：
-
-```bash
-cd narratium-fronted
-npm install
-# 或
-pnpm install
-```
-
-2. 启动开发服务器：
-
-```bash
-npm run dev
-# 或
-pnpm dev
-```
-
-前端将在 http://localhost:3000 上运行。
-
-## 🔄 数据库配置
-
-项目支持两种数据库配置：
-
-1. **本地 PostgreSQL**：默认配置，适合开发环境
-2. **Supabase 云数据库**：通过设置 `USE_SUPABASE=true` 环境变量启用
-
-数据库迁移：
-
-```bash
-python narratium/db/db_migrate.py
-```
-
-## 🧪 测试
-
-运行集成测试：
-
-```bash
-# 先启动 API 服务
-python main.py
-
-# 在另一个终端运行测试
-python scripts/test_live_api.py
-```
-
-## 🌐 API 文档
-
-启动服务后，访问 http://localhost:8000/docs 查看完整的 API 文档。
-
-主要 API 端点：
-
-- `/initialize` - 初始化游戏实例
-- `/setup` - 设置新游戏
-- `/action` - 执行游戏动作
-- `/stories` - 故事管理
-- `/sessions` - 游戏会话管理
-
-## 🤝 贡献指南
-
-欢迎贡献代码、报告问题或提出新功能建议！请遵循以下步骤：
-
-1. Fork 仓库
-2. 创建功能分支 (`git checkout -b feature/amazing-feature`)
-3. 提交更改 (`git commit -m 'Add some amazing feature'`)
-4. 推送到分支 (`git push origin feature/amazing-feature`)
-5. 创建 Pull Request
-
-## 📄 许可证
-
-[MIT License](LICENSE)
-
-## 📧 联系方式
-
-如有任何问题或建议，请通过 [issues](https://github.com/yourusername/OpenWorld/issues) 联系我们。
+- [下载与安装教程](https://github.com/alipymanbu/Android/blob/master/%E5%AE%98%E7%BD%91%E7%89%88APP%E4%B8%8B%E8%BD%BD/Narratium/%E4%B8%8B%E8%BD%BD%E4%B8%8E%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.md)
+- [API配置与模型接入](https://github.com/alipymanbu/Android/blob/master/%E5%AE%98%E7%BD%91%E7%89%88APP%E4%B8%8B%E8%BD%BD/Narratium/API%E9%85%8D%E7%BD%AE%E4%B8%8E%E6%A8%A1%E5%9E%8B%E6%8E%A5%E5%85%A5.md)
+- [剧情分支与世界书玩法](https://github.com/alipymanbu/Android/blob/master/%E5%AE%98%E7%BD%91%E7%89%88APP%E4%B8%8B%E8%BD%BD/Narratium/%E5%89%A7%E6%83%85%E5%88%86%E6%94%AF%E4%B8%8E%E4%B8%96%E7%95%8C%E4%B9%A6%E7%8E%A9%E6%B3%95.md)
+- [数据存储与常见问题排查](https://github.com/alipymanbu/Android/blob/master/%E5%AE%98%E7%BD%91%E7%89%88APP%E4%B8%8B%E8%BD%BD/Narratium/%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E4%B8%8E%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5.md)
+- [角色卡字段含义与写法](https://github.com/alipymanbu/Android/blob/master/%E5%AE%98%E7%BD%91%E7%89%88APP%E4%B8%8B%E8%BD%BD/Narratium/%E8%A7%92%E8%89%B2%E5%8D%A1%E5%AD%97%E6%AE%B5%E5%90%AB%E4%B9%89%E4%B8%8E%E5%86%99%E6%B3%95.md)
+- [角色卡导入与社区下载](https://github.com/alipymanbu/Android/blob/master/%E5%AE%98%E7%BD%91%E7%89%88APP%E4%B8%8B%E8%BD%BD/Narratium/%E8%A7%92%E8%89%B2%E5%8D%A1%E5%AF%BC%E5%85%A5%E4%B8%8E%E7%A4%BE%E5%8C%BA%E4%B8%8B%E8%BD%BD.md)
+- [全部软件目录](https://github.com/alipymanbu/Android/blob/master/%E5%85%A8%E9%83%A8%E8%BD%AF%E4%BB%B6%E7%9B%AE%E5%BD%95.md)
 
 ---
 
-*Narratium - 让每一个故事都是一次冒险*
+> 本仓库由上游项目 fork 而来，原始说明见[上游仓库](https://github.com/0xSkipper/Narratium)。
